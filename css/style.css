@@ -1,0 +1,130 @@
+body{
+  margin:0;
+  font-size: 17px;
+  background-color: #efefef;
+}
+.header{
+  background-color: #273b47;
+  height: 35px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor{
+  width: 1024px;
+  margin:auto;
+}
+nav{
+  font-family: 'Lato',sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+nav ul{
+  display: inline-block;
+  margin: 0;
+}
+nav ul li{
+  display:inline-block;
+  padding: 5px 15px;
+  border-right: 1px solid white;
+}
+nav ul li:last-child{
+  border:none;
+}
+nav ul a{
+  text-decoration: none;
+  color:white;
+}
+.buscador{
+  height: 40px;
+  padding: 5px 0;
+}
+.buscador input{
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  float:right;
+}
+.boton{
+  color:white;
+  text-decoration: none;
+  background-color:#ff4842;
+  border:1px solid #d0272a;
+  border-bottom:2px solid #d0272a;
+  padding:4px 12px;
+}
+.boton:hover{
+  background-color:#7dcd40;
+  border:1px solid #808080;
+  border-bottom:2px solid #808080;
+}
+.articulos {
+  background-color: white;
+}
+.articulos img{
+  width: 300px;
+  height: 200px;
+}
+.contenedor-articulos{
+  width: 1024px;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.articulos article{
+  width: 300px;
+}
+.presentacion{
+  position: relative;
+}
+.post-presentacion{
+  background-color: rgba(246,246, 246, 0.8);
+  border:1px solid gray;
+  width:550px;
+  padding:10px;
+  position:absolute;
+  bottom:40px;
+  left: 20px;
+  font-size: 12px;
+}
+.post-presentacion header{
+  color:#282828;
+  font-stretch: condensed;
+  border-bottom: 1px solid darkgray;
+  margin:10px 20px;
+  font-size: 18px;
+}
+.post-presentacion footer{
+  margin:10px 20px;
+  display: flex;
+  justify-content:space-between;
+}
+.post-presentacion footer div{
+  width:200px;
+  display: flex;
+  align-items: center;
+}
+.post-presentacion footer div img{
+  border-radius: 50%;
+}
+.post-presentacion footer div p{
+  display: inline-block;
+  margin-left: 10px;
+}
+.post-presentacion footer time{
+  display: inline-block;
+  margin: 17px 0;
+}
+.post footer>*{
+  margin: 10px 0 30px 0;
+}
+.post footer{
+  border-top:1px solid darkgray;
+  display: flex;
+  justify-content: space-between;
+}
