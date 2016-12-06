@@ -173,9 +173,11 @@ nav .selected{
   background-color: #eaeaea;
   border:1px solid darkgray;
   margin: 10px;
-  padding: 10px 15px;
 }
 .paginador ul li a{
   text-decoration: none;
   color: #515151;
+  display: block;
+  height: inherit;
+  padding: 10px 15px;
 }
