@@ -2,6 +2,7 @@ body{
   margin:0;
   background-color: #efefef;
   font-family: 'Open Sans', sans-serif;
+  color:#515151;
 }
 .contenedor{
   width: 1024px;
@@ -121,7 +122,7 @@ nav .selected{
   font-size: 12px;
 }
 .post-presentacion header{
-  color:#282828;
+  //color:#515151;
   font-stretch: condensed;
   border-bottom: 1px solid darkgray;
   margin:10px 20px;
@@ -155,4 +156,26 @@ nav .selected{
   border-top:1px solid darkgray;
   display: flex;
   justify-content: space-between;
+}
+.paginador{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paginador .selected{
+  background-color: white;
+}
+.paginador ul{
+  display: flex;
+  list-style: none;
+}
+.paginador ul li{
+  background-color: #eaeaea;
+  border:1px solid darkgray;
+  margin: 10px;
+  padding: 10px 15px;
+}
+.paginador ul li a{
+  text-decoration: none;
+  color: #515151;
 }
