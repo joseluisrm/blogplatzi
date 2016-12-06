@@ -76,14 +76,17 @@ nav .selected{
   color:white;
   text-decoration: none;
   background-color:#ff4842;
-  border:1px solid #d0272a;
-  border-bottom:2px solid #d0272a;
+  //border:1px solid #d0272a;
+  //border-bottom:2px solid #d0272a;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.3);
   padding:4px 12px;
+  border-radius: 5px;
 }
 .boton:hover{
   background-color:#7dcd40;
-  border:1px solid #808080;
-  border-bottom:2px solid #808080;
+  //border:1px solid #808080;
+  //border-bottom:2px solid #808080;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.3);
 }
 .articulos {
   background-color: white;
