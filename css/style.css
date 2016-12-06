@@ -18,24 +18,27 @@ body{
 .header div{
   display: flex;
   align-items: center;
+  height: inherit;
 }
 nav{
   font-family: 'Lato',sans-serif;
   font-weight: bold;
+  height: inherit;
 }
 nav ul{
   display:flex;
   align-items: center;
   list-style: none;
   margin: 0;
+  height: inherit;
 }
 nav ul li{
   color:white;
+  height: inherit;
 }
 nav ul li:after{
   content:"|";
   display: inline-block;
-  margin:0 10px;
 }
 nav ul li:last-child:after{
   content:"";
@@ -43,14 +46,20 @@ nav ul li:last-child:after{
 nav ul li a{
   text-decoration: none;
   color:white;
-  height: 50px;
-  padding-top: 10px;
+  height: inherit;
+  display: inline-block;
+  line-height: 55px;
+  padding:0 10px;
+  //line-height: 45px;
+  //border-top: 5px solid transparent;
 }
 nav ul li a:hover{
-  border-top: 5px solid #7dcd40;
+  //border-top: 5px solid #7dcd40;
+  box-shadow: inset 0px 5px 0px  #7dcd40;
 }
 nav .selected{
-  border-top: 5px solid #d0272a;
+  //border-top: 5px solid #d0272a;
+  box-shadow: inset 0px 5px 0px  #d0272a;
 }
 .buscador{
   height: 40px;
