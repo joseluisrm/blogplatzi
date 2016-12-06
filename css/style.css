@@ -1,40 +1,56 @@
 body{
   margin:0;
-  font-size: 17px;
   background-color: #efefef;
+  font-family: 'Open Sans', sans-serif;
 }
-.header{
-  background-color: #273b47;
-  height: 35px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .contenedor{
   width: 1024px;
   margin:auto;
 }
+.header{
+  background-color: #273b47;
+  height: 50px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header div{
+  display: flex;
+  align-items: center;
+}
 nav{
   font-family: 'Lato',sans-serif;
   font-weight: bold;
-  font-size: 0.9em;
 }
 nav ul{
-  display: inline-block;
+  display:flex;
+  align-items: center;
+  list-style: none;
   margin: 0;
 }
 nav ul li{
-  display:inline-block;
-  padding: 5px 15px;
-  border-right: 1px solid white;
+  color:white;
 }
-nav ul li:last-child{
-  border:none;
+nav ul li:after{
+  content:"|";
+  display: inline-block;
+  margin:0 10px;
 }
-nav ul a{
+nav ul li:last-child:after{
+  content:"";
+}
+nav ul li a{
   text-decoration: none;
   color:white;
+  height: 50px;
+  padding-top: 10px;
+}
+nav ul li a:hover{
+  border-top: 5px solid #7dcd40;
+}
+nav .selected{
+  border-top: 5px solid #d0272a;
 }
 .buscador{
   height: 40px;
