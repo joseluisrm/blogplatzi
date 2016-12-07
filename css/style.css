@@ -33,6 +33,7 @@ nav ul{
   list-style: none;
   margin: 0;
   height: inherit;
+  padding-left: 0 !important;
 }
 nav ul li{
   color:white;
@@ -210,6 +211,7 @@ nav .selected{
 @media screen and (max-width:630px) {
   .paginador ul{
     flex-wrap: wrap;
+    justify-content: center;
   }
   .paginador ul li{
     margin:2px;
@@ -244,13 +246,9 @@ nav .selected{
     content:"";
   }
   nav ul li a:hover{
-    //border-top: 5px solid #7dcd40;
-    //box-shadow: inset 0px 5px 0px  #7dcd40;
     background-color: #7dcd40;
   }
   nav .selected{
-    //border-top: 5px solid #d0272a;
-    //box-shadow: inset 0px 5px 0px  #d0272a;
     background-color: #d0272a;
   }
   .buscador{
