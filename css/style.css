@@ -253,4 +253,11 @@ nav .selected{
     //box-shadow: inset 0px 5px 0px  #d0272a;
     background-color: #d0272a;
   }
+  .buscador{
+    text-align: center;
+  }
+  .buscador input{
+    float:none;
+    width: 80%;
+  }
 }
