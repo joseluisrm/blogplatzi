@@ -5,7 +5,8 @@ body{
   color:#515151;
 }
 .contenedor{
-  width: 1024px;
+  width: auto;
+  max-width: 1024px;
   margin:auto;
 }
 .header{
@@ -97,7 +98,8 @@ nav .selected{
   height: 200px;
 }
 .contenedor-articulos{
-  width: 1024px;
+  width: auto;
+  max-width: 1024px;
   margin: auto;
   padding-top: 30px;
   padding-bottom: 20px;
@@ -110,6 +112,7 @@ nav .selected{
 }
 .presentacion{
   position: relative;
+  overflow: hidden;
 }
 .post-presentacion{
   background-color: rgba(246,246, 246, 0.8);
@@ -149,6 +152,9 @@ nav .selected{
   display: inline-block;
   margin: 17px 0;
 }
+.post{
+  margin: 0 10px;
+}
 .post footer>*{
   margin: 10px 0 30px 0;
 }
@@ -180,4 +186,71 @@ nav .selected{
   display: block;
   height: inherit;
   padding: 10px 15px;
+}
+@media screen and (max-width:1024px) {
+  .contenedor-articulos{
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .presentacion{
+    display: none;
+  }
+  .presentacion img{
+    display: none;
+  }
+  .paginador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:630px) {
+  .paginador ul{
+    flex-wrap: wrap;
+  }
+  .paginador ul li{
+    margin:2px;
+  }
+  .header{
+    display: block;
+    height: auto;
+    padding:5px 10px;
+  }
+  .header div{
+    display: block;
+  }
+  .header div>a{
+    position: absolute;
+    top:5px;
+    right:10px;
+  }
+  .header nav ul{
+    display: block;
+    border: none;
+    padding:0 10px;
+  }
+  .header nav ul li{
+    display: block;
+    margin: 0;
+  }
+  .header nav ul li a{
+    display: block;
+    text-align: center;
+  }
+  nav ul li:after{
+    content:"";
+  }
+  nav ul li a:hover{
+    //border-top: 5px solid #7dcd40;
+    //box-shadow: inset 0px 5px 0px  #7dcd40;
+    background-color: #7dcd40;
+  }
+  nav .selected{
+    //border-top: 5px solid #d0272a;
+    //box-shadow: inset 0px 5px 0px  #d0272a;
+    background-color: #d0272a;
+  }
 }
